@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Михаил  Глянцев](https://up.htmlacademy.ru/htmlcss/17/user/233300).
-* Наставник: [Макс Масленко].
+* Наставник: [Макс Масленко](https://htmlacademy.ru/profile/biggus-dickus)
 
 ---
 
