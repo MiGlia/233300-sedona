@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Седона каталог</title>
+  </head>
+  <body>
+  <header class="main-header"> <!--хедер страницы  -->
+    <a class="header-logo" href="/"></a>
+    <div class="container">
+      <nav class="main-navigation">          <!--Основная навигация  -->
+        <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+          <li>
+            <a>Гостиницы</a>
+          </li>
+        </ul>
+      </nav>     <!--основная навигация конец  -->
+    </div>
+  </header> <!--хедер страницы конец  -->
+    <main class="container"> <!--основной контейнер страницы -->
+    <div class= "selection">
+      <div class="selection-left"> <!--сортировка -->
+          <form action="#" method="get">
+            <fieldset class="items-selection-title">
+              <legend>Инфраструктура:</legend>
+              <input class="box" type="checkbox" name="infrastructure1" id="select-waterpool">
+              <label for="select-waterpool">Бассеин</label>
+              <input class="box" type="checkbox" name="infrastructure2" id="select-parking">
+              <label for="select-parking">Парковка</label>
+              <input class="box" type="checkbox" name="infrastructure3" id="select-internet">
+              <label for="select-internet">wi-fi</label>
+            </fieldset>
+            <fieldset class="items-selection-title">
+              <legend>Тип Жилья::</legend>
+              <input class="box" type="checkbox" name="type1" id="select-hotel">
+              <label for="select-hotel">Гостиница</label>
+              <input class="box" type="checkbox" name="type2" id="select-motel">
+              <label for="select-motel">Мотель</label>
+              <input class="box" type="checkbox" name="type3" id="select-apartments">
+              <label for="select-apartments">Апартаменты</label>
+            </fieldset>
+          </form>
+      </div>
+      <div class="selection-right">
+        <fieldset class="items-selection-title">
+            <legend>Стоимость в сутки(Р):</legend>
+            <input type="range" min="0" max="3000" step="100">
+            <input class="btn" type="submit" value="Показать">
+        </fieldset>
+      </div>
+    </div> <!--сортировка конец-->
+    <section class="result">  <!--блок результатов-->
+      <div class="result-top">
+        <h2>Найдено:3</h2>
+          <fieldset class="selection-result">
+              <legend class="legend-result">Сортировка:</legend>
+              <ul>
+                <li>
+                  <a href="#">По цене:</a>
+                </li>
+                <li>
+                  <a>По типу:</a>
+                </li>
+                <li>
+                  <a>По рейтингу:</a>
+                </li>
+              </ul>
+          </fieldset>
+      </div>
+      <article class="result-item">
+        <img src="http://placehold.it/150x100" alt="" >
+        <p>Amar resort spa</p>
+        <p>Гостиница от 3500 р.</p>
+        <a class="btn-info" href="#">Подробнее</a>
+        <a class="btn-buy" href="#">Купить</a>
+        <!-- <p>рейтинг:8,5</p> не знаю как -->
+      </article>
+      <article class="result-item">
+        <img src="http://placehold.it/150x100" alt="" >
+        <p>Desert quail inn</p>
+        <p>Мотель от 2000 р.</p>
+        <a class="btn-info" href="#">Подробнее</a>
+        <a class="btn-buy" href="#">Купить</a>
+          <!-- <p>рейтинг:8,9</p> не знаю как -->
+      </article>
+      <article class="result-item">
+        <img src="http://placehold.it/150x100" alt="" >
+        <p>Villas at poco diablo</p>
+        <p>Апартаменты от 4000 р.</p>
+        <a class="btn-info" href="#">Подробнее</a>
+        <a class="btn-buy" href="#">Купить</a>
+          <!-- <p>рейтинг:9,2</p> не знаю как -->
+      </article>
+    </section> <!--блок результатов конец-->
+    <footer class="main-footer"> <!--футер начало-->
+      <div class="container">
+        <section class="footer-contacts">
+        <p>Visitsedonia</p>
+        </section>
+        <section class="footer-social">
+          <a class="social-btn social-btn-tv" href="#">Твиттер</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-yt" href="#">Youtube</a>
+        </section>
+        <section class="footer-copyright">
+        <p>Разработано:</p>
+        <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+      </section>
+    </div>
+  </footer> <!--футер конец-->
+    </main>
+  </body>
+  </html>
