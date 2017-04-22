@@ -1,0 +1,21 @@
+body {
+  font-size: 14px;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-weight: bold;
+  line-height: 1.86 ;
+}
+.big-text {
+  font-size: 21px;
+  line-height: 1.24;
+
+}
+.features-text {
+      color: rgb(51, 51, 51);
+      font-weight: normal;
+}
+.search {
+    color: rgb(255, 255, 255);
+}
+.btn-logo {
+    font-weight: normal;
+}
