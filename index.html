@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>Седона</title>
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">     <!--хедер страницы  -->
     <div class="container">
       <nav class="main-navigation">          <!--Основная навигация  -->
-        <ul>
+        <ul class="menu">
           <li>
             <a href="#">Информация</a>
           </li>
@@ -29,7 +30,7 @@
       </div>
     </div>
   </header> <!--хедер страницы конец  -->
-  <main class="container"> <!--основной контейнер страницы -->
+  <main class="container shadow"> <!--основной контейнер страницы -->
     <div class="image-main">
       <img src="img/index/intro_sedona.jpg" width="1200" height="773" alt="Sedona">  <!-- изображение в шапке -->
     </div>
@@ -92,7 +93,7 @@
         <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне </p>
           <a class="big-text search" href="#">Поиск гостиниц в Седоне</a>
-          <div class="index-seach">
+          <div class="index-search">
             <form action="#" method="get">
               <div class="form-group">
                 <label for="date-check-in">Дата заезда</label>
@@ -128,7 +129,7 @@
       </div>
     </main>
     <footer class="main-footer"> <!--футер начало-->
-      <div class="container">
+      <div class="container block-footer">
         <div class="footer-contacts">
           <a class="big-text" href="#">#Visitsedona</a>
         </div>
