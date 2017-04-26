@@ -3,6 +3,7 @@ body {
   font-family: "PT Sans", "Tahoma", sans-serif;
   text-transform: uppercase;
   line-height: 1.5;
+  margin: 0;
 }
 .big-text {
   font-size: 21px;
@@ -13,5 +14,136 @@ body {
   font-weight: normal;
 }
 .search {
-  color: rgb(255, 255, 255);
+  color: rgb(119, 99, 87);
+  position: relative;
+}
+.main-header {
+  position: relative;
+}
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+.header-menu li {
+  display: inline-block;
+  width: 240px;
+  text-align: center;
+}
+.header-menu {
+  font-size: 0;
+  padding-left: 0;
+}
+.header-menu a {
+  font-size: 14px;
+  display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.main-header li:nth-child(2)   {
+  margin-right: 240px;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.shadow {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+img {
+  vertical-align: bottom;
+}
+.features-text {
+  margin-bottom: 55px;
+}
+.features .big-text,
+.features-text {
+  text-align: center;
+}
+.features-first {
+  display: flex;
+  margin-bottom: 60px;
+}
+.features-first-text {
+  width: 400px;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background-color: rgb(129, 179, 210);
+  text-align: center;
+}
+.features-first-image {
+  width: 800px;
+}
+.features-item {
+  display: flex;
+  margin-bottom: 85px;
+}
+.features-item li {
+  width: 400px;
+  text-align: center;
+}
+.features-second {
+  display: flex;
+  margin-bottom: 50px;
+}
+.features-second-image {
+  width: 800px;
+}
+.features-second-text {
+  width: 400px;
+  padding-left: 48px;
+  padding-left: 48px;
+  padding-top: 49px;
+  padding-bottom: 41px;
+  background-color: rgb(129, 179, 210);
+  text-align: center;
+}
+.features-items-third-fifth {
+  display: flex;
+  margin-bottom: 60px;
+}
+.features-items-third-fifth li {
+  width: 400px;
+  text-align: center;
+}
+.index-content {
+  width: 576px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.block-footer {
+  display: flex;
+}
+.map {
+  background-image: url("img/index/map.jpg");
+}
+.footer-contacts {
+  width: 240px;
+  margin-right: 88px;
+  padding-left: 73px;
+  padding-top: 53px;
+  padding-bottom: 50px;
+}
+.footer-social {
+  width: 400px;
+  margin-right: 88px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 125px;
+}
+.footer-copyright {
+  width: 240px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.index-search {
+  position: absolute;
+  top: 100;
+  left: 50%;
+  transform: translate(-50%);
 }
