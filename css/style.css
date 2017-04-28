@@ -25,6 +25,7 @@ body {
   top: 0;
   left: 50%;
   transform: translate(-50%);
+  z-index: 1;
 }
 .header-menu li {
   display: inline-block;
@@ -48,11 +49,12 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+  position: relative;
 }
 .shadow {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-img {
+.features-first-image img {
   vertical-align: bottom;
 }
 .features-text {
@@ -74,6 +76,7 @@ img {
   padding-bottom: 40px;
   background-color: rgb(129, 179, 210);
   text-align: center;
+  color: rgb(255, 255, 255);
 }
 .features-first-image {
   width: 800px;
@@ -147,3 +150,45 @@ img {
   left: 50%;
   transform: translate(-50%);
 }
+.image-main {
+  height: 510px;
+  width: 1200px;
+  background-image: url("img/index/main-foto.png");
+  background-position:  right 0px top -54px;
+  margin-bottom: 60px;
+  font-family: "PT Sans";
+  font-size: 21px;
+
+}
+.big-text span {
+  display: block;
+  text-align: center;
+  margin-bottom: 31px;
+}
+.features-first-text b {
+  display: block;
+  font-size: 21px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 1;
+}
+.features-first-text span {
+  display: block;
+  font-size: 21px;
+  line-height: 1;
+}
+.features-first-text .number {
+  font-size: 14px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  height: 1.5;
+}
+.features-first-text p {
+  font-size: 14px;
+  height: 1.5;
+}
+/*.index-search {
+  display: flex;
+  width: 568px;
+  height: 395px;
+}*/
