@@ -31,6 +31,7 @@ body {
   display: inline-block;
   width: 240px;
   text-align: center;
+  vertical-align: top;
 }
 .header-menu {
   font-size: 0;
@@ -84,6 +85,7 @@ body {
 .features-item {
   display: flex;
   margin-bottom: 85px;
+  list-style: none;
 }
 .features-item li {
   width: 400px;
@@ -108,12 +110,14 @@ body {
 .features-items-third-fifth {
   display: flex;
   margin-bottom: 60px;
+  list-style: none;
 }
 .features-items-third-fifth li {
   width: 400px;
   text-align: center;
 }
 .index-content {
+  position: relative;
   width: 576px;
   margin-left: auto;
   margin-right: auto;
@@ -123,6 +127,8 @@ body {
   display: flex;
 }
 .map {
+  width: 1200px;
+   height: 593px;
   background-image: url("img/index/map.jpg");
 }
 .footer-contacts {
@@ -187,8 +193,39 @@ body {
   font-size: 14px;
   height: 1.5;
 }
-/*.index-search {
+.index-search {
   display: flex;
   width: 568px;
   height: 395px;
-}*/
+  background-color: rgb(255, 255, 255);
+}
+.index-content a {
+  display: flex;
+  width: 568px;
+  height: 86px;
+  background-color: rgb(118, 99, 87);
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+
+}
+.index-content-title {
+  font-size: 30px;
+  line-height: 0.8;
+}
+.index-content p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgb(51, 51, 51);
+  margin-top: 35px;
+}
+.index-search form {
+  display: flex;
+  width: 568px;
+  height: 395px;
+  flex-direction: column;
+}
+.form-group input {
+  background-color: rgb(242, 242, 242);
+  margin-bottom: 29px;
+}
