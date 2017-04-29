@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
   font-size: 14px;
   font-family: "PT Sans", "Tahoma", sans-serif;
@@ -32,6 +37,7 @@ body {
   width: 240px;
   text-align: center;
   vertical-align: top;
+  font-weight: bold;
 }
 .header-menu {
   font-size: 0;
@@ -42,6 +48,11 @@ body {
   display: inline-block;
   padding-top: 16px;
   padding-bottom: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+.main-navigation {
+  background-color: rgb(255, 255, 255);
 }
 .main-header li:nth-child(2)   {
   margin-right: 240px;
@@ -49,7 +60,7 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0;
   position: relative;
 }
 .shadow {
@@ -84,8 +95,11 @@ body {
 }
 .features-item {
   display: flex;
-  margin-bottom: 85px;
+  padding-bottom: 85px;
   list-style: none;
+  padding-left: 0;
+  padding-top: 60px;
+  margin: 0;
 }
 .features-item li {
   width: 400px;
@@ -100,17 +114,19 @@ body {
 }
 .features-second-text {
   width: 400px;
-  padding-left: 48px;
-  padding-left: 48px;
-  padding-top: 49px;
-  padding-bottom: 41px;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-top: 50px;
+  padding-bottom: 40px;
   background-color: rgb(129, 179, 210);
   text-align: center;
+  color: rgb(255, 255, 255);
 }
 .features-items-third-fifth {
   display: flex;
   margin-bottom: 60px;
   list-style: none;
+  padding-left: 0;
 }
 .features-items-third-fifth li {
   width: 400px;
@@ -128,7 +144,7 @@ body {
 }
 .map {
   width: 1200px;
-   height: 593px;
+  height: 593px;
   background-image: url("img/index/map.jpg");
 }
 .footer-contacts {
@@ -164,7 +180,6 @@ body {
   margin-bottom: 60px;
   font-family: "PT Sans";
   font-size: 21px;
-
 }
 .big-text span {
   display: block;
@@ -207,7 +222,6 @@ body {
   color: rgb(255, 255, 255);
   justify-content: center;
   align-items: center;
-
 }
 .index-content-title {
   font-size: 30px;
@@ -228,4 +242,71 @@ body {
 .form-group input {
   background-color: rgb(242, 242, 242);
   margin-bottom: 29px;
+}
+.features-item-title {
+  font-size: 21px;
+  line-height: 1;
+}
+.features-item-title p {
+  font-size: 21px;
+  line-height: 1.5;
+  color: rgb(51, 51, 51);
+}
+.features-item-description span {
+  display: block;
+}
+.decoration {
+  text-decoration: none;
+}
+.selection {
+  background-image: url("img/hotels/background-search.jpg");
+  background-position:  right 0px top -300px;
+  height: 220px;
+  width: 1200px;
+}
+.items-selection-title {
+  display: inline-block;
+  vertical-align: top;
+}
+.select-left {
+  width: 240px;
+  margin-left: 73px;
+}
+.select-center {
+  width: 288px;
+  margin-right: 200px;
+}
+.select-right {
+  width: 328px;
+}
+.result-top {
+  display: inline-block;
+  width: 1200px;
+  vertical-align: top;
+  margin-top: 30px;
+  margin-left: 73px;
+}
+.result-menu {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.result-menu li {
+  display: inline-block;
+  vertical-align: top;
+}
+.result-item {
+  display: flex;
+  margin-top: 35px;
+}
+.result-item-left {
+  width: 528px;
+  margin-right: 288px;
+  margin-left: 70px;
+}
+.star-rating {
+  width: 240px;
+  text-align: right;
 }
