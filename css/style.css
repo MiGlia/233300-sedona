@@ -82,10 +82,7 @@ body {
 }
 .features-first-text {
   width: 400px;
-  padding-left: 46px;
-  padding-right: 46px;
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding: 50px 46px 40px 46px;
   background-color: rgb(129, 179, 210);
   text-align: center;
   color: rgb(255, 255, 255);
@@ -114,10 +111,7 @@ body {
 }
 .features-second-text {
   width: 400px;
-  padding-left: 46px;
-  padding-right: 46px;
-  padding-top: 50px;
-  padding-bottom: 40px;
+  padding: 50px 46px 40px 46px;
   background-color: rgb(129, 179, 210);
   text-align: center;
   color: rgb(255, 255, 255);
