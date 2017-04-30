@@ -10,6 +10,11 @@ body {
   line-height: 1.5;
   margin: 0;
 }
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .big-text {
   font-size: 21px;
   line-height: 1.24;
@@ -66,9 +71,11 @@ body {
 .shadow {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-.features-first-image img {
-  vertical-align: bottom;
+.features-first-image img,
+.features-second-image img {
+  display: block;
 }
+
 .features-text {
   margin-bottom: 55px;
 }
@@ -78,7 +85,6 @@ body {
 }
 .features-first {
   display: flex;
-  margin-bottom: 60px;
 }
 .features-first-text {
   width: 400px;
@@ -95,7 +101,6 @@ body {
   padding-bottom: 85px;
   list-style: none;
   padding-left: 0;
-  padding-top: 60px;
   margin: 0;
 }
 .features-item li {
@@ -104,10 +109,10 @@ body {
 }
 .features-second {
   display: flex;
-  margin-bottom: 50px;
 }
 .features-second-image {
   width: 800px;
+  height: 256px;
 }
 .features-second-text {
   width: 400px;
@@ -121,6 +126,10 @@ body {
   margin-bottom: 60px;
   list-style: none;
   padding-left: 0;
+  background-color: rgb(238, 238, 238);
+  margin-top: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .features-items-third-fifth li {
   width: 400px;
@@ -180,19 +189,23 @@ body {
   text-align: center;
   margin-bottom: 31px;
 }
-.features-first-text b {
+.features-first-text b,
+.features-second-text b,
+.features-items-third-fifth b {
   display: block;
   font-size: 21px;
   text-align: center;
   font-size: 21px;
   line-height: 1;
 }
-.features-first-text span {
+.features-first-text span,
+.features-second-text span,
+.features-items-third-fifth span {
   display: block;
-  font-size: 21px;
-  line-height: 1;
 }
-.features-first-text .number {
+.features-first-text .number,
+.features-second-text .number,
+.features-items-third-fifth .number {
   font-size: 14px;
   padding-top: 25px;
   padding-bottom: 15px;
@@ -228,14 +241,70 @@ body {
   margin-top: 35px;
 }
 .index-search form {
-  display: flex;
   width: 568px;
-  height: 395px;
-  flex-direction: column;
+  min=height: 395px;
 }
 .form-group input {
   background-color: rgb(242, 242, 242);
-  margin-bottom: 29px;
+}
+.form-group {
+  font-size: 0;
+}
+.form-group.adults {
+  float: left;
+  max-width: 50%;
+  margin-top: 32px;
+  margin-left: 58px;
+}
+.form-group.kids {
+  float: right;
+  margin-top: 32px;
+  margin-right: 58px;
+
+}
+.form-group label {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 40px;
+  font-size: initial;
+}
+.form-group-controls {
+  display: inline-block;
+  vertical-align: top;
+}
+.search-btn {
+  float: left;
+  width: 568px;
+  margin-top: 55px;
+}
+.form-group .search {
+  width: 458px;
+  min-height: 58px;
+  background-color: rgb(129, 179, 210);
+  padding: 0;
+  color: rgb(255, 255, 255);
+  border: 0;
+}
+.data-first {
+  margin-top: 58px;
+  height: 38px;
+}
+.date-second {
+  margin-top: 30px;
+  height: 38px;
+}
+.field-date {
+  width: 346px;
+  height: 38px;
+}
+.field-number {
+  width: 38px;
+  height: 38px;
+}
+.index-search label {
+  font-size: 14px;
+  line-height: 1.86;
+  font-weight: bold;
 }
 .features-item-title {
   font-size: 21px;
@@ -248,9 +317,14 @@ body {
 }
 .features-item-description span {
   display: block;
+  font-size: 14px;
 }
 .decoration {
   text-decoration: none;
+}
+.text-gray {
+  color: rgb(51, 51, 51);
+}
 }
 .selection {
   background-image: url("img/hotels/background-search.jpg");
@@ -292,15 +366,70 @@ body {
   vertical-align: top;
 }
 .result-item {
-  display: flex;
-  margin-top: 35px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-.result-item-left {
-  width: 528px;
+.result-item-left  {
+  float: left;
+  width: 530px;
+  font-size: 0;
   margin-right: 288px;
   margin-left: 70px;
 }
 .star-rating {
   width: 240px;
   text-align: right;
+  float: right;
+}
+.result-item-left img {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 30px;
+}
+.result-item-text {
+  display: inline-block;
+  vertical-align: top;
+  font-size: initial;
+}
+.legend-result {
+  margin-top: 0;
+  line-height: 1;
+}
+.type-result,
+.price-result {
+  display: inline-block;
+  vertical-align: middle;
+}
+.type-result {
+  margin-right: 35px;
+}
+.features-left-image,
+.features-center-image,
+.features-right-image {
+  position: relative;
+  padding-top: 165px;
+}
+.features-left-image::before {
+  content: "";
+  position: absolute;
+  background: url("img/index/logo-home-left.png") no-repeat;
+  height: 70px;
+  width: 74px;
+  top: 55px;
+}
+.features-center-image::before {
+  content: "";
+  position: absolute;
+  background: url("img/index/logo-food-center.png") no-repeat;
+  height: 70px;
+  width: 74px;
+  top: 55px;
+}
+.features-right-image::before {
+  content: "";
+  position: absolute;
+  background: url("img/index/logo-right-souvenir.png") no-repeat;
+  height: 76px;
+  width: 64px;
+  top: 55px;
 }
