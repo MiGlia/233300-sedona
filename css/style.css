@@ -29,6 +29,8 @@ body {
 }
 .main-header {
   position: relative;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 .header-logo {
   position: absolute;
@@ -55,9 +57,7 @@ body {
   padding-bottom: 16px;
   text-decoration: none;
   color: inherit;
-}
-.main-navigation {
-  background-color: rgb(255, 255, 255);
+  vertical-align: top;
 }
 .main-header li:nth-child(2)   {
   margin-right: 240px;
@@ -88,7 +88,7 @@ body {
 }
 .features-first-text {
   width: 400px;
-  padding: 50px 46px 40px 46px;
+  padding: 50px 46px 33px 46px;
   background-color: rgb(129, 179, 210);
   text-align: center;
   color: rgb(255, 255, 255);
@@ -116,7 +116,7 @@ body {
 }
 .features-second-text {
   width: 400px;
-  padding: 50px 46px 40px 46px;
+  padding: 50px 46px 33px 46px;
   background-color: rgb(129, 179, 210);
   text-align: center;
   color: rgb(255, 255, 255);
@@ -178,7 +178,7 @@ body {
 .image-main {
   height: 510px;
   width: 1200px;
-  background-image: url("img/index/main-foto.png");
+  background: rgb(214, 228, 239) url("img/index/main-foto.png");
   background-position:  right 0px top -54px;
   margin-bottom: 60px;
   font-family: "PT Sans";
@@ -431,4 +431,92 @@ body {
   height: 76px;
   width: 64px;
   top: 55px;
+}
+/*.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-checkbox-active {
+    width: 26px;
+    height: 22px;
+    background-position: -9px -9px;
+}
+
+.sprite-checkbox-not-active {
+    width: 22px;
+    height: 22px;
+    background-position: -9px -49px;
+}
+
+.sprite-icon-fb {
+    width: 10px;
+    height: 19px;
+    background-position: -9px -89px;
+}
+
+.sprite-icon-html {
+    width: 113px;
+    height: 39px;
+    background-position: -9px -126px;
+}
+
+.sprite-icon-tw {
+    width: 17px;
+    height: 15px;
+    background-position: -9px -183px;
+}
+
+.sprite-icon-yt {
+    width: 20px;
+    height: 16px;
+    background-position: -9px -216px;
+}
+
+.sprite-star2 {
+    width: 42px;
+    height: 17px;
+    background-position: -9px -250px;
+}
+
+.sprite-star3 {
+    width: 65px;
+    height: 17px;
+    background-position: -9px -285px;
+}
+
+.sprite-star4 {
+    width: 89px;
+    height: 17px;
+    background-position: -9px -320px;
+}*/
+.social-btn {
+  display: inline-block;
+  vertical-align: top;
+  width: 46px;
+  height: 48px;
+background-color: rgb(129, 179, 210);
+  font-size: 0;
+  position: relative;
+}
+.social-btn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url("img/sprite.png");
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+}
+ .social-btn-tv::before {
+   width: 17px;
+   height: 15px;
+   background-position: -9px -183px;
+ }
+.social-btn:hover {
+  background-color: rgb(102, 158, 192);
+}
+.social-btn-tv:active {
+  background-color: rgb(84, 150, 189);
 }
