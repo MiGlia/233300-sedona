@@ -538,7 +538,7 @@ background-color: rgb(129, 179, 210);
    height: 15px;
    background-position: -9px -183px;
  }
-.social-btn:hover {
+.footer-social .social-btn:hover {
   background-color: rgb(102, 158, 192);
 }
 /*.social-btn-tv:active {
@@ -555,10 +555,8 @@ background-color: rgb(129, 179, 210);
   height: 16px;
   background-position: -9px -216px;
 }
-.social-btn-yt:active::before {
-  width: 20px;
-  height: 16px;
-  background-position: -5px -246px;
+.social-btn-yt:active::before{
+opacity: 0.3;
 }
 .btn-logo {
   width: 113px;
