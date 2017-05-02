@@ -491,23 +491,30 @@ text-align: center;
     background-position: -9px -216px;
 }
 
+.sprite-icon-yt-active {
+    width: 20px;
+    height: 16px;
+    background-position: -5px -246px;
+}
+
 .sprite-star2 {
     width: 42px;
     height: 17px;
-    background-position: -9px -250px;
+    background-position: -9px -276px;
 }
 
 .sprite-star3 {
     width: 65px;
     height: 17px;
-    background-position: -9px -285px;
+    background-position: -9px -311px;
 }
 
 .sprite-star4 {
     width: 89px;
     height: 17px;
-    background-position: -9px -320px;
+    background-position: -9px -346px;
 }*/
+
 .social-btn {
   display: inline-block;
   vertical-align: top;
@@ -542,10 +549,16 @@ background-color: rgb(129, 179, 210);
    height: 19px;
    background-position: -9px -89px;
 }
+
 .social-btn-yt::before {
   width: 20px;
   height: 16px;
   background-position: -9px -216px;
+}
+.social-btn-yt:active::before {
+  width: 20px;
+  height: 16px;
+  background-position: -5px -246px;
 }
 .btn-logo {
   width: 113px;
