@@ -19,9 +19,15 @@ body {
   font-size: 21px;
   line-height: 1.24;
 }
+.big-text-features{
+  margin-top: 60px;
+    text-align: center;
+}
 .features-text {
   color: rgb(51, 51, 51);
   font-weight: normal;
+    margin-bottom: 55px;
+      text-align: center;
 }
 .search {
   color: rgb(119, 99, 87);
@@ -74,14 +80,6 @@ body {
 .features-first-image img,
 .features-second-image img {
   display: block;
-}
-
-.features-text {
-  margin-bottom: 55px;
-}
-.features .big-text,
-.features-text {
-  text-align: center;
 }
 .features-first {
   display: flex;
@@ -153,16 +151,17 @@ body {
 .footer-contacts {
   width: 240px;
   margin-right: 88px;
-  padding-left: 73px;
+  margin-left: 73px;
   padding-top: 53px;
   padding-bottom: 50px;
+  text-align: center;
 }
 .footer-social {
   width: 400px;
-  margin-right: 88px;
+  margin-right: 125px;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 125px;
+text-align: center;
 }
 .footer-copyright {
   width: 240px;
@@ -175,16 +174,28 @@ body {
   left: 50%;
   transform: translate(-50%);
 }
-.image-main {
-  height: 510px;
-  width: 1200px;
-  background: rgb(214, 228, 239) url("img/index/main-foto.png");
+.features::before {
+  content: "";
+  background: rgb(214, 228, 239) url("img/index/intro-sedona.jpg");
   background-position:  right 0px top -54px;
-  margin-bottom: 60px;
-  font-family: "PT Sans";
-  font-size: 21px;
+  width: 1200px;
+  height: 510px;
+  position: absolute;
+  top: 0;
 }
-.big-text span {
+.features::after {
+  content: "";
+  background-image: url("img/index/white.png");
+  position: absolute;
+  width: 1200px;
+  height: 57px;
+  top: 453px;
+}
+.features {
+  padding-top: 510px;
+  position: relative;
+}
+.big-text-features span {
   display: block;
   text-align: center;
   margin-bottom: 31px;
@@ -334,6 +345,12 @@ body {
 .items-selection-title {
   display: inline-block;
   vertical-align: top;
+  border: 0;
+  margin-top: 25px;
+  color: rgb(255, 255, 255);
+}
+.form-group {
+  margin-top: 20px;
 }
 .select-left {
   width: 240px;
@@ -517,6 +534,35 @@ background-color: rgb(129, 179, 210);
 .social-btn:hover {
   background-color: rgb(102, 158, 192);
 }
-.social-btn-tv:active {
+/*.social-btn-tv:active {
   background-color: rgb(84, 150, 189);
+}*/
+ .social-btn-fb::before {
+   width: 10px;
+   height: 19px;
+   background-position: -9px -89px;
+}
+.social-btn-yt::before {
+  width: 20px;
+  height: 16px;
+  background-position: -9px -216px;
+}
+.btn-logo {
+  width: 113px;
+  height: 39px;
+  background-color: rgb(255, 255, 255);
+  font-size: 0;
+  position: relative;
+}
+.btn-logo::before {
+  width: 113px;
+  height: 39px;
+  background-position: -9px -126px;
+}
+.footer-copyright span{
+  display: inline-block;
+font-size: 14px;
+line-height: 1.7;
+padding-top: 10px;
+font-weight: bold;
 }
