@@ -68,6 +68,13 @@ body {
   color: inherit;
   vertical-align: top;
 }
+.header-menu a:hover {
+  color: rgb(129, 179, 210);
+}
+.header-menu a:active {
+  opacity: 0.3;
+  color: rgb(0, 0, 0);
+}
 .main-header li:nth-child(2)   {
   margin-right: 240px;
 }
@@ -345,12 +352,117 @@ text-align: center;
   height: 220px;
   width: 1200px;
 }
+.active {
+  color: rgb(118, 99, 87);
+}
 .items-selection-title {
   display: inline-block;
   vertical-align: top;
   border: 0;
   margin-top: 25px;
   color: rgb(255, 255, 255);
+}
+.filter-range {
+  display: inline-block;
+  width: 330px;
+  color: rgb(255,255,255);
+  text-transform: uppercase;
+  margin-top: 20px;
+  border: 0;
+}
+.filter-range-title {
+  margin-bottom: 9px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.3px;
+}
+.price-controls {
+  height: 36px;
+  margin-bottom: 20px;
+  border: 2px solid rgb(255,255,255);
+  border-radius: 2px;
+  font-size: 0;
+  position: relative;
+}
+.price-controls::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background: rgb(255,255,255);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.price-controls label {
+  /*display: inline-block;*/
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+  cursor: pointer;
+}
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  background: none;
+  border: none;
+}
+.range-controls {
+  position: relative;
+  margin-bottom: 32px;
+}
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: rgb(255, 255, 255);
+}
+.range-toggle {
+  width: 4px;
+  height: 4px;
+  top: -8px;
+  background: rgb(171, 171, 171);
+  border: 8px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+  position: absolute;
+}
+.range-toggle-min {
+  left: 0;
+}
+.range-toggle-max {
+  left: 80%;
+}
+.range-toggle:hover {
+  background: rgb(28, 79, 128);
+}
+.btn-range {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  background: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.btn-range:hover {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
 }
 .form-group {
   margin-top: 20px;
@@ -366,6 +478,11 @@ text-align: center;
 .select-right {
   width: 328px;
 }
+.items-selection-title legend {
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: bold;
+}
 .result-top {
   display: inline-block;
   width: 1200px;
@@ -373,16 +490,32 @@ text-align: center;
   margin-top: 30px;
   margin-left: 73px;
 }
+.result-top strong {
+  font-size: 21px;
+  line-height: 1.5;
+  margin-right: 48px;
+}
+.result-top b {
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: normal;
+  margin-right: 40px;
+}
 .result-menu {
   display: inline-block;
-  vertical-align: top;
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+  vertical-align: bottom;
 }
 .result-menu li {
   display: inline-block;
   vertical-align: top;
+  margin-right: 33px;
+  font-size: 12px;
+}
+.result-menu li:nth-child(3) {
+  margin-right: 504px;
 }
 .result-item {
   padding-top: 30px;
@@ -552,7 +685,13 @@ text-align: center;
     height: 17px;
     background-position: -10px -581px;
 }*/
-
+.footer-contacts .big-text {
+  text-decoration: none;
+  font-size: 21px;
+  line-height: 1.3;
+  color: inherit;
+  font-weight: bold;
+}
 .social-btn {
   display: inline-block;
   vertical-align: top;
@@ -656,4 +795,37 @@ background-color: rgb(102, 158, 192);
 }
 .btn-buy:hover {
   background-color: rgb(96, 78,67);
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  display: block;
+  padding-left: 55px;
+  position: relative;
+  cursor: pointer;
+}
+input[type="checkbox"] + label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top:0;
+  background-image: url("img/sprite.png");
+  background-repeat: no-repeat;
+  width: 22px;
+  height: 22px;
+  background-position: -10px -52px;
+  }
+  input[type="checkbox"]:checked + label::before {
+  content: "";
+  display: block;
+  background-image: url("img/sprite.png");
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 22px;
+    background-position: -10px -10px;
+    position: absolute;
+    left: 0;
+    top:0;
 }

@@ -20,8 +20,8 @@
           <li>
             <a href="#">Карта штата</a>
           </li>
-          <li>
-            <a href="#">Гостиницы</a>
+          <li class="active">
+            <a>Гостиницы</a>
           </li>
         </ul>
       </nav>     <!--основная навигация конец  -->
@@ -64,13 +64,21 @@
               <label for="select-apartments">Апартаменты</label>
             </div>
           </fieldset>
-          <fieldset class="items-selection-title select-right">
-            <legend>Стоимость в сутки (Р):</legend>
-            <div class="form-group">
-              <input type="range" min="0" max="3000" step="100">
-              <input class="btn" type="submit" value="Показать">
+          <fieldset class="filter-range">
+            <legend class="filter-range-title">Стоимость в сутки (Р):</legend>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
             </div>
-          </fieldset>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-range" type="submit">Показать</button>
+        </fieldset>
         </form>
       </div>
     </div> <!--сортировка конец-->
@@ -80,7 +88,7 @@
         <b>Сортировка:</b>
         <ul class="result-menu">
           <li>
-            <a href="#">По цене</a>
+            <a class="decoration" href="#">По цене</a>
           </li>
           <li>
             <a href="#">По типу</a>
@@ -155,7 +163,7 @@
       </div>
       <div class="footer-copyright">
         <span>Website by</span>
-        <a class="btn-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a class="btn-logo social-btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </div>
     </div>
   </footer> <!--футер конец-->
