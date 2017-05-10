@@ -980,3 +980,18 @@ input[type="checkbox"] + label::before {
 .form-group input[type=number] {
     -moz-appearance:textfield;
 }
+
+.button-control {
+  display: none;
+}
+/*.form-group {
+  position: relative;
+}
+.form-group-controls::before {
+  content: "yyy";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  left: 0;
+}*/
