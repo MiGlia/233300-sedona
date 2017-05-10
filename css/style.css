@@ -23,7 +23,7 @@ body {
   margin-top: 60px;
   text-align: center;
   font-size: 21px;
-  line-height: 1.2;
+  line-height: 1.24;
 }
 .features-text {
   color: rgb(51, 51, 51);
@@ -34,11 +34,12 @@ body {
 .search {
   background-color: rgb(119, 99, 87);
   position: relative;
-  padding: 35px 146px 35px 146px;
+  padding: 29px 140px 31px 139px;
   display: inline-block;
   color: rgb(255, 255, 255);
   font-size: 21px;
-  line-height: 1.3;
+  line-height: 1.23;
+  font-weight: bold;
 }
 .main-header {
   position: relative;
@@ -100,7 +101,7 @@ body {
 }
 .features-first-text {
   width: 400px;
-  padding: 50px 46px 33px 46px;
+  padding: 46px 46px 33px 46px;
   background-color: rgb(129, 179, 210);
   text-align: center;
   color: rgb(255, 255, 255);
@@ -110,7 +111,7 @@ body {
 }
 .features-item {
   display: flex;
-  padding-bottom: 85px;
+  padding-bottom: 70px;
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -118,6 +119,9 @@ body {
 .features-item li {
   width: 400px;
   text-align: center;
+}
+.features-item-description {
+  margin-top: 21px;
 }
 .features-second {
   display: flex;
@@ -128,20 +132,20 @@ body {
 }
 .features-second-text {
   width: 400px;
-  padding: 50px 46px 33px 46px;
+  padding: 44px 46px 33px 46px;
   background-color: rgb(129, 179, 210);
   text-align: center;
   color: rgb(255, 255, 255);
 }
 .features-items-third-fifth {
   display: flex;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   list-style: none;
   padding-left: 0;
   background-color: rgb(238, 238, 238);
   margin-top: 0;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 45px;
+  padding-bottom: 45px;
 }
 .features-items-third-fifth li {
   width: 400px;
@@ -157,25 +161,21 @@ body {
 .block-footer {
   display: flex;
 }
-/*.map {
-  width: 1200px;
-  height: 593px;
-  background-image: url("img/index/map.jpg");
-}*/
 .footer-contacts {
   width: 240px;
-  margin-right: 88px;
+  margin-right: 85px;
   margin-left: 73px;
-  padding-top: 53px;
+  padding-top: 45px;
   padding-bottom: 50px;
+  padding-left: 15px;
   text-align: center;
 }
 .footer-social {
   width: 400px;
-  margin-right: 125px;
-  padding-top: 30px;
+  margin-right: 100px;
+  padding-top: 35px;
   padding-bottom: 30px;
-text-align: center;
+  text-align: center;
 }
 .footer-copyright {
   width: 240px;
@@ -243,28 +243,21 @@ text-align: center;
 .features-items-third-fifth .number {
   font-size: 14px;
   padding-top: 25px;
-  padding-bottom: 15px;
+  padding-bottom: 8px;
   height: 1.5;
 }
 .features-first-text p {
   font-size: 14px;
   height: 1.5;
 }
-/*.index-search {
-  display: flex;
-  width: 568px;
-  height: 395px;
-  background-color: rgb(255, 255, 255);
-  z-index: 10;*/
-}
 .index-content a {
-  display: flex;
+  display: inline-block;
   width: 568px;
   height: 86px;
   background-color: rgb(118, 99, 87);
   color: rgb(255, 255, 255);
-  justify-content: center;
-  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
 }
 .index-content-title {
   font-size: 30px;
@@ -274,7 +267,8 @@ text-align: center;
   font-size: 14px;
   line-height: 1.7;
   color: rgb(51, 51, 51);
-  margin-top: 35px;
+  margin-top: 32px;
+  margin-bottom: 47px;
 }
 .index-search form {
   width: 568px;
@@ -290,18 +284,17 @@ text-align: center;
   float: left;
   max-width: 50%;
   margin-top: 32px;
-  margin-left: 58px;
+  margin-left: 53px;
 }
 .form-group.kids {
   float: right;
   margin-top: 32px;
-  margin-right: 58px;
+  margin-right: 53px;
 
 }
 .form-group label {
   display: inline-block;
   vertical-align: middle;
-  margin-right: 40px;
   font-size: initial;
 }
 .form-group-controls {
@@ -311,17 +304,21 @@ text-align: center;
 .search-btn {
   float: left;
   width: 568px;
-  margin-top: 55px;
+  margin-top: 50px;
 }
-.form-group .search {
+.form-group-btn .search:hover {
+  background-color: rgb(102, 158, 192);
+}
+
+.form-group-btn .search {
   width: 458px;
   min-height: 58px;
   background-color: rgb(129, 179, 210);
   padding: 0;
   color: rgb(255, 255, 255);
   border: 0;
-  margin-top: 55px;
-  font-weight: bold;
+  text-transform:inherit;
+  outline: none;
 }
 .date-second {
   margin-top: 30px;
@@ -335,10 +332,31 @@ text-align: center;
   width: 38px;
   height: 38px;
 }
+.form-group-controls input[type="number"] {
+  outline: none;
+  border: 0;
+}
 .index-search label {
   font-size: 14px;
   line-height: 1.86;
   font-weight: bold;
+  margin-left: 3px;
+}
+.adults label {
+  margin-right: 40px;
+  padding-top: 4px;
+}
+.kids label {
+  margin-right: 28px;
+  padding-top: 4px;
+}
+.date-second label {
+  margin-right: 19px;
+  padding-bottom: 12px;
+}
+.data-first label {
+  margin-right: 23px;
+  padding-bottom: 10px;
 }
 .features-item-title {
   font-size: 21px;
@@ -486,9 +504,6 @@ text-align: center;
 .btn-range:hover {
   color: rgb(0, 0, 0);
   background: rgb(255, 255, 255);
-}
-.form-group {
-  margin-top: 20px;
 }
 .data-first {
   margin-top: 55px;
@@ -642,15 +657,15 @@ text-align: center;
 .features-center-image,
 .features-right-image {
   position: relative;
-  padding-top: 165px;
+  padding-top: 160px;
 }
 .features-left-image::before {
   content: "";
   position: absolute;
   background: url("img/index/logo-home-left.png") no-repeat;
-  height: 70px;
+  height: 72px;
   width: 74px;
-  top: 55px;
+  top: 59px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -660,7 +675,7 @@ text-align: center;
   background: url("img/index/logo-food-center.png") no-repeat;
   height: 70px;
   width: 74px;
-  top: 55px;
+  top: 59px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -829,7 +844,7 @@ text-align: center;
   display: inline-block;
   font-size: 14px;
   line-height: 1.7;
-  padding-top: 10px;
+  padding-top: 7px;
   font-weight: bold;
   margin-right: 8px;
 }
@@ -844,6 +859,9 @@ text-align: center;
   background-position: -10px -318px;
 }
 .form-group .search:hover {
+  background-color: rgb(102, 158, 192);
+}
+.form-group .search:active {
   background-color: rgb(102, 158, 192);
 }
 .btn-info {
@@ -912,7 +930,7 @@ input[type="checkbox"] + label::before {
 }
 .index-content {
   position: relative;
-  padding-bottom: 592px;
+  padding-bottom: 473px;
 }
 .index-content::after {
   content: "";
@@ -920,13 +938,10 @@ input[type="checkbox"] + label::before {
   background-image: url("img/index/map.jpg");
   background-repeat: no-repeat;
   width: 1200px;
-  height: 592px;
+  height: 473px;
   position: absolute;
   left: -54%;
   z-index: 1;
-}
-.field-date {
-  padding-right: 40px;
 }
 .icon-calendar{
   position: relative;
@@ -941,7 +956,7 @@ input[type="checkbox"] + label::before {
   background-image: url("img/sprite.png");
   background-position: -10px -94px;
   top: -15px;
-  left: -25px;
+  left: -30px;
 }
 .form-group input[type="text"] {
   font-size: 14px;
@@ -979,19 +994,19 @@ input[type="checkbox"] + label::before {
 }
 .form-group input[type=number] {
     -moz-appearance:textfield;
-}
-
+    }
 .button-control {
-  display: none;
+   border: 0;
+   background-color: rgb(242, 242, 242);
+   padding:  6px 13px 7px 13px;
+   outline: none;
+   font-weight: bold;
+   color: rgb(169, 169, 169);
+   font-size: 21px;
+   vertical-align: top;
 }
-/*.form-group {
-  position: relative;
+.button-control:hover {
+  color: rgb(0, 0, 0);
 }
-.form-group-controls::before {
-  content: "yyy";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: black;
-  left: 0;
-}*/
+.button-control:active {
+  color: rgb(129, 179, 210);
