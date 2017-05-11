@@ -111,7 +111,7 @@ body {
 }
 .features-item {
   display: flex;
-  padding-bottom: 70px;
+  padding-bottom: 75px;
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -145,7 +145,7 @@ body {
   background-color: rgb(238, 238, 238);
   margin-top: 0;
   padding-top: 45px;
-  padding-bottom: 45px;
+  padding-bottom: 50px;
 }
 .features-items-third-fifth li {
   width: 400px;
@@ -218,12 +218,12 @@ body {
   text-align: center;
   margin-bottom: 31px;
 }
-/*.number::before {
+.number::before {
   content:"\2013";
 }
 .number::after {
   content:"\2013";
-}*/
+}
 .features-first-text b,
 .features-second-text b,
 .features-items-third-fifth b {
@@ -393,24 +393,29 @@ body {
   border: 0;
   margin-top: 25px;
   color: rgb(255, 255, 255);
+  padding: 0;
 }
 .filter-range {
   display: inline-block;
   width: 330px;
   color: rgb(255,255,255);
   text-transform: uppercase;
+  margin: 0;
   margin-top: 20px;
   border: 0;
+  padding: 0 6px 0 8px;
 }
 .filter-range-title {
   margin-bottom: 9px;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.3px;
+  padding-top: 23px;
 }
 .price-controls {
   height: 36px;
   margin-bottom: 20px;
+  margin-top: 10px;
   border: 2px solid rgb(255,255,255);
   border-radius: 2px;
   font-size: 0;
@@ -435,6 +440,9 @@ body {
 .price-controls .max-price {
   width: 90px;
   padding-left: 65px;
+}
+.price-controls .max-price {
+  padding-left: 75px;
 }
 .price-controls input {
   width: 50px;
@@ -485,15 +493,16 @@ body {
 .range-toggle-max {
   left: 80%;
 }
-.range-toggle:hover {
+.range-toggle:hover::before {
   background: rgb(28, 79, 128);
 }
 .btn-range {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin: 0;
+  margin-left:82px;
+  padding: 6px 33px;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 1.5;
   color: rgb(255, 255, 255);
   text-transform: uppercase;
   background: transparent;
@@ -515,7 +524,8 @@ body {
 }
 .select-center {
   width: 288px;
-  margin-right: 200px;
+  margin-right: 185px;
+  margin-left: 8px;
 }
 .select-right {
   width: 328px;
@@ -524,18 +534,19 @@ body {
   font-size: 16px;
   line-height: 1.3;
   font-weight: bold;
+  padding-top: 5px;
 }
 .result-top {
   display: inline-block;
-  width: 1200px;
   vertical-align: top;
-  margin-top: 30px;
+  margin-top: 28px;
   margin-left: 73px;
+  width: 1123px;
 }
 .result-top strong {
   font-size: 21px;
   line-height: 1.5;
-  margin-right: 48px;
+  margin-right: 45px;
 }
 .result-top b {
   font-size: 12px;
@@ -573,14 +584,11 @@ body {
 .active-result-menu:active {
   color: rgb(0, 0, 0);
   border-bottom: none;
-  }
-.result-menu li:nth-child(3) {
-  margin-right: 534px;
 }
 .result-active {
   color: rgb(129, 179, 210);
   text-decoration: none;
-  margin-right: 33px;
+  margin-right: 25px;
   opacity: 1;
 }
 .arrow-result-menu {
@@ -598,31 +606,81 @@ body {
 }
 .arrow {
   float: right;
+  text-decoration: none;
+  margin: 0;
+  margin-right: 65px;
+  padding: 0;
+  padding-top: 8px;
+}
+.arrow li {
+  display: inline-block;
+  padding-right: 2px;
 }
 .result-item {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  margin-top: 54px;
+  margin-bottom: 32px;
 }
 .result-item-left  {
   float: left;
   width: 530px;
   font-size: 0;
   margin-right: 288px;
-  margin-left: 70px;
+  margin-left: 74px;
 }
 .star-rating {
   width: 240px;
   text-align: right;
   float: right;
+  position: relative;
 }
 .star-rating mark {
   background-color: rgb(242, 242, 242);
   color: rgb(102, 102, 102);
+  float: right;
+  margin-right: 84px;
+  margin-top: 72px;
+}
+.hotel-rating-four::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  background-image: url("img/sprite.png");
+  background-repeat: no-repeat;
+  transform: translate(-50%);
+  width: 89px;
+  height: 17px;
+  background-position: -10px -581px;
+}
+.hotel-rating-three::before {
+  content: "";
+  position: absolute;
+  left: 55%;
+  top: 5%;
+  background-image: url("img/sprite.png");
+  background-repeat: no-repeat;
+  transform: translate(-50%);
+  width: 65px;
+  height: 17px;
+  background-position: -10px -544px;
+}
+.hotel-rating-two::before {
+  content: "";
+  position: absolute;
+  left: 60%;
+  top: 5%;
+  background-image: url("img/sprite.png");
+  background-repeat: no-repeat;
+  transform: translate(-50%);
+  width: 42px;
+  height: 17px;
+  background-position: -10px -507px;
 }
 .result-item-left img {
   display: inline-block;
   vertical-align: top;
   margin-right: 30px;
+  margin-top: 5px;
 }
 .result-item-text {
   display: inline-block;
@@ -643,6 +701,10 @@ body {
   color: rgb(96, 78, 67);
   opacity: 0.3;
 }
+.result-item-text p {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
 .type-result,
 .price-result {
   display: inline-block;
@@ -651,7 +713,13 @@ body {
   line-height: 1.5;
 }
 .type-result {
-  margin-right: 35px;
+  margin-right: 20px;
+}
+.result-second {
+  padding-left: 45px;
+}
+.result-first {
+  padding-left: 20px;
 }
 .features-left-image,
 .features-center-image,
@@ -689,95 +757,6 @@ body {
   left: 50%;
   transform: translate(-50%);
 }
-/*.sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-checkbox-active {
-    width: 26px;
-    height: 22px;
-    background-position: -10px -10px;
-}
-
-.sprite-checkbox-not-active {
-    width: 22px;
-    height: 22px;
-    background-position: -10px -52px;
-}
-
-.sprite-icon-calendar {
-    width: 21px;
-    height: 22px;
-    background-position: -10px -94px;
-}
-
-.sprite-icon-calendar-active {
-    width: 21px;
-    height: 22px;
-    background-position: -10px -136px;
-}
-
-.sprite-icon-calendar-hover {
-    width: 21px;
-    height: 22px;
-    background-position: -10px -178px;
-}
-
-.sprite-icon-fb {
-    width: 10px;
-    height: 19px;
-    background-position: -10px -220px;
-}
-
-.sprite-icon-html {
-    width: 113px;
-    height: 39px;
-    background-position: -10px -259px;
-}
-
-.sprite-icon-html-active {
-    width: 113px;
-    height: 39px;
-    background-position: -10px -318px;
-}
-
-.sprite-icon-html-hover {
-    width: 113px;
-    height: 39px;
-    background-position: -10px -377px;
-}
-
-.sprite-icon-tw {
-    width: 17px;
-    height: 15px;
-    background-position: -10px -436px;
-}
-
-.sprite-icon-yt {
-    width: 20px;
-    height: 16px;
-    background-position: -10px -471px;
-}
-
-.sprite-star2 {
-    width: 42px;
-    height: 17px;
-    background-position: -10px -507px;
-}
-
-.sprite-star3 {
-    width: 65px;
-    height: 17px;
-    background-position: -10px -544px;
-}
-
-.sprite-star4 {
-    width: 89px;
-    height: 17px;
-    background-position: -10px -581px;
-}*/
 .footer-contacts .big-text {
   text-decoration: none;
   font-size: 21px;
@@ -866,17 +845,18 @@ body {
 }
 .btn-info {
   background-color: rgb(129, 179,210);
-  padding: 8px 17px 7px 17px;
+  padding: 4px 16px 4px 17px;
   min-height: 17px;
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 14px;
   line-height: 1.5;
   display: inline-block;
+  margin-right: 2px;
 }
 .btn-buy {
   background-color: rgb(118, 99,87);
-  padding: 8px 17px 7px 17px;
+  padding: 4px 16px 5px 17px;
   min-height: 17px;
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -900,7 +880,7 @@ input[type="checkbox"] {
 }
 input[type="checkbox"] + label {
   display: block;
-  padding-left: 55px;
+  padding-left: 35px;
   position: relative;
   cursor: pointer;
 }
@@ -928,6 +908,15 @@ input[type="checkbox"] + label::before {
   left: 0;
   top:0;
 }
+.first-check {
+  margin-top: 28px;
+}
+.second-check {
+  margin-top: 20px;
+}
+.third-check {
+  margin-top: 20px;
+}
 .index-content {
   position: relative;
   padding-bottom: 473px;
@@ -951,7 +940,7 @@ input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   display: block;
-  width: 21px;
+  width: 22px;
   height: 22px;
   background-image: url("img/sprite.png");
   background-position: -10px -94px;
@@ -978,12 +967,12 @@ input[type="checkbox"] + label::before {
   outline: 1px solid rgb(235, 235, 235);
 }
 .icon-calendar:hover::before {
-  width: 21px;
+  width: 22px;
   height: 22px;
   background-position: -10px -178px;
 }
 .icon-calendar:active::before {
-  width: 21px;
+  width: 22px;
   height: 22px;
   background-position: -10px -136px;
 }
