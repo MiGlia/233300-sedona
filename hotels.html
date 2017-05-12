@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Седона: отели</title>
-  <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">     <!--хедер страницы  -->
@@ -20,8 +21,8 @@
           <li>
             <a href="#">Карта штата</a>
           </li>
-          <li>
-            <a href="#">Гостиницы</a>
+          <li class="active">
+            <a>Гостиницы</a>
           </li>
         </ul>
       </nav>     <!--основная навигация конец  -->
@@ -37,39 +38,47 @@
           <fieldset class="items-selection-title select-left">
             <legend>Инфраструктура:</legend>
             <div class="form-group">
-              <input class="box" type="checkbox" name="infrastructure1" id="select-waterpool">
-              <label for="select-waterpool">Бассейн</label>
+              <input class="box" type="checkbox" name="infrastructure1" id="select-waterpool" checked>
+              <label class="first-check" for="select-waterpool">Бассейн</label>
+            </div>
+            <div class="form-group box-second">
+              <input class="box" type="checkbox" name="infrastructure2" id="select-parking" disabled >
+              <label class="first-check" for="select-parking">Парковка</label>
             </div>
             <div class="form-group">
-              <input class="box" type="checkbox" name="infrastructure2" id="select-parking">
-              <label for="select-parking">Парковка</label>
-            </div>
-            <div class="form-group">
-              <input class="box" type="checkbox" name="infrastructure3" id="select-internet">
-              <label for="select-internet">wi-fi</label>
+              <input class="box" type="checkbox" name="infrastructure3" id="select-internet" disabled>
+              <label class="first-check" for="select-internet">wi-fi</label>
             </div>
           </fieldset>
           <fieldset class="items-selection-title select-center">
             <legend>Тип Жилья:</legend>
             <div class="form-group">
-              <input class="box" type="checkbox" name="type1" id="select-hotel">
-              <label for="select-hotel">Гостиница</label>
+              <input class="box" type="checkbox" name="type1" id="select-hotel" checked>
+              <label class="second-check " for="select-hotel">Гостиница</label>
             </div>
             <div class="form-group">
-              <input class="box" type="checkbox" name="type2" id="select-motel">
-              <label for="select-motel">Мотель</label>
+              <input class="box" type="checkbox" name="type2" id="select-motel" checked>
+              <label class="second-check" for="select-motel">Мотель</label>
             </div>
             <div class="form-group">
-              <input class="box" type="checkbox" name="type3" id="select-apartments">
-              <label for="select-apartments">Апартаменты</label>
+              <input class="box" type="checkbox" name="type3" id="select-apartments" checked>
+              <label class="second-check" for="select-apartments">Апартаменты</label>
             </div>
           </fieldset>
-          <fieldset class="items-selection-title select-right">
-            <legend>Стоимость в сутки (Р):</legend>
-            <div class="form-group">
-              <input type="range" min="0" max="3000" step="100">
-              <input class="btn" type="submit" value="Показать">
+          <fieldset class="filter-range">
+            <legend class="filter-range-title">Стоимость в сутки (Р):</legend>
+            <div class="price-controls">
+              <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
             </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-range" type="submit">Показать</button>
           </fieldset>
         </form>
       </div>
@@ -80,19 +89,21 @@
         <b>Сортировка:</b>
         <ul class="result-menu">
           <li>
-            <a href="#">По цене</a>
+            <a class="text-result-menu result-active" href="#">По цене</a>
           </li>
           <li>
-            <a href="#">По типу</a>
+            <a class="text-result-menu active-result-menu" href="#">По типу</a>
           </li>
           <li>
-            <a href="#">По рейтингу</a>
+            <a class="text-result-menu active-result-menu" href="#">По рейтингу</a>
+          </li>
+        </ul>
+        <ul class="arrow">
+          <li>
+            <a class="arrow-result-menu" href="#" title="По возрастанию">▲</a>
           </li>
           <li>
-            <a href="#" title="По возрастанию">▲</a>
-          </li>
-          <li>
-            <a href="#" title="По убыванию">▼</a>
+            <a class="arrow-result-menu active-arrow" href="#" title="По убыванию">▼</a>
           </li>
         </ul>
       </div>
@@ -100,10 +111,10 @@
         <div class="result-item-left">
           <img src="img/hotels/hotels-top.jpg" width="135" height="90" alt="Amara Resort Spa">
           <div class="result-item-text">
-            <h2 class="legend-result">Amara Resort & Spa</h2>
-            <p><span class="type-result">Гостиница</span><span class="price-result">от 4000 р.</span></p>
-            <a class="btn-info" href="#">Подробнее</a>
-            <a class="btn-buy" href="#">Забронировать</a>
+            <a class="btn-hotel-name" href="#"><h2 class="legend-result">Amara Resort & Spa</h2></a>
+            <mark><span class="type-result">Гостиница</span><span class="price-result result-first">от 4000 р.</span></mark>
+            <a class="btn-info" href="#"><span>Подробнее</span></a>
+            <a class="btn-buy" href="#"><span>Забронировать</span></a>
           </div>
         </div>
         <div class="star-rating">
@@ -115,10 +126,10 @@
         <div class="result-item-left">
           <img src="img/hotels/hotels-middle.jpg" width="135" height="90" alt="Desert Quail Inn">
           <div class="result-item-text">
-            <h2 class="legend-result">Desert Quail Inn</h2>
-            <p><span class="type-result">Мотель</span><span class="price-result">от 3000 р.</span></p>
-            <a class="btn-info" href="#">Подробнее</a>
-            <a class="btn-buy" href="#">Забронировать</a>
+            <a class="btn-hotel-name" href="#"><h2 class="legend-result">Desert Quail Inn</h2></a>
+            <mark><span class="type-result">Мотель</span><span class="price-result result-second">от 3000 р.</span></mark>
+            <a class="btn-info" href="#"><span>Подробнее</span></a>
+            <a class="btn-buy" href="#"><span>Забронировать</span></a>
           </div>
         </div>
         <div class="star-rating">
@@ -130,10 +141,10 @@
         <div class="result-item-left">
           <img src="img/hotels/hotels-bottom.jpg" width="135" height="90" alt="Villas At Poco Diablo">
           <div class="result-item-text">
-            <h2 class="legend-result">Villas at Poco Diablo</h2>
-            <p><span class="type-result">Апартаменты</span><span class="price-result">от 2000 р.</span></p>
-            <a class="btn-info" href="#">Подробнее</a>
-            <a class="btn-buy" href="#">Забронировать</a>
+            <a class="btn-hotel-name" href="#"><h2 class="legend-result">Villas at Poco Diablo</h2></a>
+            <mark><span class="type-result">Апартаменты</span><span class="price-result">от 2000 р.</span></mark>
+            <a class="btn-info" href="#"><span>Подробнее</span></a>
+            <a class="btn-buy" href="#"><span>Забронировать</span></a>
           </div>
         </div>
         <div class="star-rating">
@@ -155,7 +166,7 @@
       </div>
       <div class="footer-copyright">
         <span>Website by</span>
-        <a class="btn-logo" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        <a class="btn-logo social-btn" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </div>
     </div>
   </footer> <!--футер конец-->
