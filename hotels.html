@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Седона: отели</title>
-  <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
 <body>
@@ -41,12 +41,12 @@
               <input class="box" type="checkbox" name="infrastructure1" id="select-waterpool">
               <label class="first-check" for="select-waterpool">Бассейн</label>
             </div>
-            <div class="form-group">
-              <input class="box" type="checkbox" name="infrastructure2" id="select-parking">
+            <div class="form-group box-second">
+              <input class="box" type="checkbox" name="infrastructure2" id="select-parking" disabled >
               <label class="second-check" for="select-parking">Парковка</label>
             </div>
             <div class="form-group">
-              <input class="box" type="checkbox" name="infrastructure3" id="select-internet">
+              <input class="box" type="checkbox" name="infrastructure3" id="select-internet" disabled>
               <label class="third-check" for="select-internet">wi-fi</label>
             </div>
           </fieldset>
@@ -68,8 +68,8 @@
           <fieldset class="filter-range">
             <legend class="filter-range-title">Стоимость в сутки (Р):</legend>
             <div class="price-controls">
-              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
             </div>
             <div class="range-controls">
               <div class="scale">
@@ -111,8 +111,8 @@
         <div class="result-item-left">
           <img src="img/hotels/hotels-top.jpg" width="135" height="90" alt="Amara Resort Spa">
           <div class="result-item-text">
-            <h2 class="legend-result">Amara Resort & Spa</h2>
-            <p><span class="type-result">Гостиница</span><span class="price-result result-first">от 4000 р.</span></p>
+            <a class="btn-hotel-name" href="#"><h2 class="legend-result">Amara Resort & Spa</h2></a>
+            <mark><span class="type-result">Гостиница</span><span class="price-result result-first">от 4000 р.</span></mark>
             <a class="btn-info" href="#"><span>Подробнее</span></a>
             <a class="btn-buy" href="#"><span>Забронировать</span></a>
           </div>
@@ -126,8 +126,8 @@
         <div class="result-item-left">
           <img src="img/hotels/hotels-middle.jpg" width="135" height="90" alt="Desert Quail Inn">
           <div class="result-item-text">
-            <h2 class="legend-result">Desert Quail Inn</h2>
-            <p><span class="type-result">Мотель</span><span class="price-result result-second">от 3000 р.</span></p>
+            <a class="btn-hotel-name" href="#"><h2 class="legend-result">Desert Quail Inn</h2></a>
+            <mark><span class="type-result">Мотель</span><span class="price-result result-second">от 3000 р.</span></mark>
             <a class="btn-info" href="#"><span>Подробнее</span></a>
             <a class="btn-buy" href="#"><span>Забронировать</span></a>
           </div>
@@ -141,8 +141,8 @@
         <div class="result-item-left">
           <img src="img/hotels/hotels-bottom.jpg" width="135" height="90" alt="Villas At Poco Diablo">
           <div class="result-item-text">
-            <h2 class="legend-result">Villas at Poco Diablo</h2>
-            <p><span class="type-result">Апартаменты</span><span class="price-result">от 2000 р.</span></p>
+            <a class="btn-hotel-name" href="#"><h2 class="legend-result">Villas at Poco Diablo</h2></a>
+            <mark><span class="type-result">Апартаменты</span><span class="price-result">от 2000 р.</span></mark>
             <a class="btn-info" href="#"><span>Подробнее</span></a>
             <a class="btn-buy" href="#"><span>Забронировать</span></a>
           </div>
