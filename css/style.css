@@ -999,6 +999,7 @@ body {
 }
 .form-group input[type=number] {
   -moz-appearance:textfield;
+  text-align: center;
     }
 .button-control {
   border: 0;
