@@ -412,7 +412,7 @@ body {
 }
 .price-controls {
   height: 36px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
   margin-top: 10px;
   border: 2px solid rgb(255,255,255);
   border-radius: 2px;
@@ -449,7 +449,7 @@ body {
   font: inherit;
   background: none;
   border: none;
-  height: 25px;
+  min-height: 25px;
 }
 .range-controls {
   position: relative;
