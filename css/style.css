@@ -196,7 +196,7 @@ body {
 }
 .features::before {
   content: "";
-  background: rgb(214, 228, 239) url("img/index/intro-sedona.jpg");
+  background: rgb(214, 228, 239) url("../img/index/intro-sedona.jpg");
   background-position:  right 0px top -54px;
   width: 1200px;
   height: 510px;
@@ -205,7 +205,7 @@ body {
 }
 .features::after {
   content: "";
-  background-image: url("img/index/white.png");
+  background-image: url("../img/index/white.png");
   position: absolute;
   width: 1200px;
   height: 57px;
@@ -375,7 +375,7 @@ body {
   color: rgb(51, 51, 51);
 }
 .selection {
-  background-image: url("img/hotels/background-search.jpg");
+  background-image: url("../img/hotels/background-search.jpg");
   background-position:  right 0px top -300px;
   height: 220px;
   width: 1200px;
@@ -646,7 +646,7 @@ body {
   position: absolute;
   left: 52%;
   top: 5%;
-  background-image: url("img/sprite.png");
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   transform: translate(-50%);
   width: 89px;
@@ -658,7 +658,7 @@ body {
   position: absolute;
   left: 56%;
   top: 5%;
-  background-image: url("img/sprite.png");
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   transform: translate(-50%);
   width: 65px;
@@ -670,7 +670,7 @@ body {
   position: absolute;
   left: 62%;
   top: 5%;
-  background-image: url("img/sprite.png");
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   transform: translate(-50%);
   width: 42px;
@@ -737,7 +737,7 @@ body {
 .features-left-image::before {
   content: "";
   position: absolute;
-  background: url("img/index/logo-home-left.png") no-repeat;
+  background: url("../img/index/logo-home-left.png") no-repeat;
   height: 72px;
   width: 74px;
   top: 59px;
@@ -747,7 +747,7 @@ body {
 .features-center-image::before {
   content: "";
   position: absolute;
-  background: url("img/index/logo-food-center.png") no-repeat;
+  background: url("../img/index/logo-food-center.png") no-repeat;
   height: 70px;
   width: 74px;
   top: 59px;
@@ -757,7 +757,7 @@ body {
 .features-right-image::before {
   content: "";
   position: absolute;
-  background: url("img/index/logo-right-souvenir.png") no-repeat;
+  background: url("../img/index/logo-right-souvenir.png") no-repeat;
   height: 76px;
   width: 64px;
   top: 55px;
@@ -785,7 +785,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  background-image: url("img/sprite.png");
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   transform: translate(-50%, -50%);
 }
@@ -896,7 +896,7 @@ body {
   position: absolute;
   left: 0;
   top:0;
-  background-image: url("img/sprite.png");
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   width: 22px;
   height: 22px;
@@ -909,7 +909,7 @@ body {
   .form-group input[type="checkbox"]:checked + label::before {
   content: "";
   display: block;
-  background-image: url("img/sprite.png");
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   width: 26px;
   height: 22px;
@@ -921,7 +921,7 @@ body {
 .box-second input[type="checkbox"] + label::before {
   content: "";
   display: block;
-  background-image: url("img/sprite.png");
+  background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   width: 26px;
   height: 22px;
@@ -945,7 +945,7 @@ body {
 .index-content::after {
   content: "";
   display: block;
-  background-image: url("img/index/map.jpg");
+  background-image: url("../img/index/map.jpg");
   background-repeat: no-repeat;
   width: 1200px;
   height: 473px;
@@ -963,7 +963,7 @@ body {
   display: block;
   width: 22px;
   height: 22px;
-  background-image: url("img/sprite.png");
+  background-image: url("../img/sprite.png");
   background-position: -10px -94px;
   top: -15px;
   left: -30px;
