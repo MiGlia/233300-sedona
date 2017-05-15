@@ -1040,3 +1040,6 @@ body {
 .price-controls input[type=number] {
   -moz-appearance:textfield;
     }
+.index-search-close {
+  display: none;
+    }
