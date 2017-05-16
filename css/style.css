@@ -116,7 +116,7 @@ body {
 }
 .features-item {
   display: flex;
-  padding-bottom: 75px;
+  padding-bottom: 68px;
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -144,12 +144,12 @@ body {
 }
 .features-items-third-fifth {
   display: flex;
-  margin-bottom: 54px;
+  margin-bottom: 48px;
   list-style: none;
   padding-left: 0;
   background-color: rgb(238, 238, 238);
   margin-top: 0;
-  padding-top: 44px;
+  padding-top: 45px;
   padding-bottom: 50px;
 }
 .features-items-third-fifth li {
@@ -170,7 +170,7 @@ body {
   width: 240px;
   margin-right: 88px;
   margin-left: 73px;
-  padding-top: 45px;
+  padding-top: 44px;
   padding-bottom: 50px;
   padding-left: 15px;
   text-align: center;
@@ -305,7 +305,7 @@ body {
 .search-btn {
   float: left;
   width: 568px;
-  margin-top: 50px;
+  margin-top: 52px;
 }
 .form-group-btn .search:hover {
   background-color: rgb(102, 158, 192);
@@ -416,7 +416,7 @@ body {
 .price-controls {
   height: 36px;
   margin-bottom: 20px;
-  margin-top: 12px;
+  margin-top: 10px;
   border: 2px solid rgb(255,255,255);
   border-radius: 2px;
   font-size: 0;
@@ -453,7 +453,6 @@ body {
   background: none;
   border: none;
   min-height: 25px;
-  padding: 0;
 }
 .range-controls {
   position: relative;
@@ -503,7 +502,7 @@ body {
   display: block;
   margin: 0;
   margin-left:82px;
-  padding: 6px 35px 6px 35px;
+  padding: 6px 35px 5px 35px;
   font-size: 14px;
   line-height: 1.5;
   color: rgb(255, 255, 255);
@@ -733,7 +732,7 @@ body {
   background-color: rgb(255, 255, 255);
   display: block;
   margin-top: 0;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 .type-result,
 .price-result {
@@ -854,9 +853,9 @@ body {
   display: inline-block;
   font-size: 14px;
   line-height: 1.7;
-  padding-top: 6px;
+  padding-top: 7px;
   font-weight: bold;
-  margin-right: 6px;
+  margin-right: 8px;
 }
 .btn-logo:hover::before {
   width: 113px;
@@ -955,11 +954,11 @@ body {
   top:0;
 }
 .first-check {
-  margin-top: 26px;
+  margin-top: 25px;
   padding-left: 38px;
 }
 .second-check {
-  margin-top: 26px;
+  margin-top: 25px;
   padding-left: 42px;
 }
 .index-content {
