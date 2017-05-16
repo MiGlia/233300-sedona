@@ -635,7 +635,7 @@ body {
   padding-bottom: 26px;
 }
 .result-item-third {
- margin-top: 29px;
+ margin-top: 27px;
  border-bottom: 1px solid rgb(229, 229, 229);
  padding-bottom: 26px;
  margin-bottom: 4px;
@@ -657,7 +657,7 @@ body {
   background-color: rgb(242, 242, 242);
   color: rgb(102, 102, 102);
   float: right;
-  margin-right: 71px;
+  margin-right: 69px;
   margin-top: 68px;
   padding: 3px 15px 3px 15px;
 }
@@ -715,7 +715,7 @@ body {
   line-height: 1;
   font-size: 21px;
   line-height: 1.3;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 .btn-hotel-name {
   text-decoration: none;
@@ -732,7 +732,7 @@ body {
   background-color: rgb(255, 255, 255);
   display: block;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 .type-result,
 .price-result {
@@ -885,7 +885,7 @@ body {
 }
 .btn-buy {
   background-color: rgb(118, 99,87);
-  padding: 4px 16px 5px 18px;
+  padding: 5px 18px 6px 20px;
   min-height: 17px;
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -971,10 +971,9 @@ body {
   background-image: url("../img/index/map.jpg");
   background-repeat: no-repeat;
   width: 1200px;
-  height: 473px;
+  height: 594px;
   position: absolute;
-  left: -54%;
-  z-index: 1;
+  left: -312px;
 }
 .icon-calendar{
   position: relative;
@@ -1003,7 +1002,7 @@ body {
 }
 .form-group input:focus {
   background-color: rgb(255, 255, 255);
-  outline: 1px solid rgb(235, 235, 235);
+  box-shadow: inset 0 1px rgb(235, 235, 235) ,inset 0 -1px rgb(235, 235, 235);
 }
 .icon-calendar:hover::before {
   width: 22px;
@@ -1059,3 +1058,7 @@ body {
 .index-search-close {
   display: none;
     }
+.main-footer {
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
+}
