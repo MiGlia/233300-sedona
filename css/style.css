@@ -453,6 +453,7 @@ body {
   background: none;
   border: none;
   min-height: 25px;
+  padding: 0;
 }
 .range-controls {
   position: relative;
@@ -620,9 +621,25 @@ body {
   display: inline-block;
   padding-right: 2px;
 }
-.result-item {
-  margin-top: 54px;
-  margin-bottom: 32px;
+.result-item-first {
+  margin-bottom: 26px;
+  margin-top: 31px;
+  padding-top: 23px;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  border-top: 1px solid rgb(229, 229, 229);
+  padding-bottom: 26px;
+}
+.result-item-second  {
+  margin-top: 26px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid rgb(229, 229, 229);
+  padding-bottom: 26px;
+}
+.result-item-third{
+ margin-top: 26px;
+ border-bottom: 1px solid rgb(229, 229, 229);
+ padding-bottom: 26px;
+ margin-bottom: 3px;
 }
 .result-item-left  {
   float: left;
@@ -716,7 +733,7 @@ body {
   background-color: rgb(255, 255, 255);
   display: block;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 .type-result,
 .price-result {
