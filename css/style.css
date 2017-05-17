@@ -20,7 +20,7 @@ body {
   line-height: 1.24;
 }
 .big-text-features{
-  margin-top: 62px;
+  margin-top: 61px;
   text-align: center;
   font-size: 21px;
   line-height: 1.24;
@@ -28,7 +28,7 @@ body {
 .features-text {
   color: rgb(51, 51, 51);
   font-weight: normal;
-  margin-bottom: 55px;
+  margin-bottom: 52px;
   text-align: center;
 }
 .search {
@@ -137,20 +137,20 @@ body {
 }
 .features-second-text {
   width: 400px;
-  padding: 44px 46px 33px 46px;
+  padding: 46px 46px 33px 46px;
   background-color: rgb(129, 179, 210);
   text-align: center;
   color: rgb(255, 255, 255);
 }
 .features-items-third-fifth {
   display: flex;
-  margin-bottom: 48px;
+  margin-bottom: 54px;
   list-style: none;
   padding-left: 0;
   background-color: rgb(238, 238, 238);
   margin-top: 0;
-  padding-top: 45px;
-  padding-bottom: 50px;
+  padding-top: 47px;
+  padding-bottom: 46px;
 }
 .features-items-third-fifth li {
   width: 400px;
